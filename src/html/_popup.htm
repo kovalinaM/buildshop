@@ -1,10 +1,28 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="callback" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+			<a href="#" data-close class="popup__close"><img src="@img/mainpage/icons/close.svg" alt="Закрыть форму"></a>
+			<div class="popup__body">
+				<h1 class="popup__title">Заказать звонок</h1>
+					<form id="form-callback" class="form__callback">
+						<div class="form__inputs form-inputs">
+							<div class="form-inputs__item">
+								<label for="name" class="form__label">Имя</label>
+								<input class="form__input _req" type="text" name="name">
+							</div>
+							<div class="form-inputs__item">
+								<label for="phonenumber" class="form__label">Телефон</label>
+								<input class="form__input _req _tel" type="tel" name="phonenumber" placeholder="+7">
+							</div>
+							<div class="form-inputs__item">							
+								<label for="comment" class="form__label">Комментарий</label>
+								<textarea class="form__textarea" name="comment"></textarea>
+							</div>
+						</div>
+						<button class="form__button button" type="submit"> Отправить</button>
+						<div class="form__agreement">Нажимая на кнопку вы соглашаетесь <a href="#" class="form__link">на обработку ваших персональных данных</a></div>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>

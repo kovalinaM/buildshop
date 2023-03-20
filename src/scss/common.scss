@@ -1,1 +1,19 @@
 // Заголовки, общие БЄМ блоки и проче...
+.button{
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: rem(15);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    @media(any-hover: hover) {
+        &:hover {
+            background-color: $mainOrange;
+        }
+    }
+}
+
+.link {
+
+	&_orange {
+	}
+}

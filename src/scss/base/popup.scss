@@ -20,7 +20,7 @@ body::after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding: 30px 10px;
+	padding: rem(32) rem(32) rem(60);
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
@@ -53,9 +53,121 @@ body::after {
 	background-color: #eee;
 	padding: 20px;
 	width: 100%;
-	max-width: 900px;
-	border-radius: 20px;
+	max-width: rem(622);
+	border-radius: rem(5);
 	.lock & {
 		visibility: visible;
+	}
+}
+
+
+.popup {
+
+	&__wrapper {
+	}
+
+	&__content {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: rem(60);
+	}
+
+	&__close {
+		position: absolute;
+        right: rem(32);
+        top: rem(32);
+		width: rem(14);
+		height: rem(14);
+        @media(max-width: $mobile) {
+            right: rem(20);
+            top: rem(20);
+        }
+        img {
+            width: 100%;
+        }
+	}
+
+	&__body {
+		max-width: rem(310);
+
+	}
+
+	&__title {
+		font-family: 'Prosto One';
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: rem(34);
+		}
+	}
+}
+.form {
+
+	&__callback {
+		color: #8A8A8A;
+	}
+
+	&__inputs {
+		&:not(:last-child) {
+			margin-bottom: rem(32);
+		}
+	}
+
+	&__label {
+		font-family: 'Prosto One';
+		font-weight: 400;
+		font-size: rem(12);
+		line-height: percent(16,12);
+
+	}
+
+	&__input {
+		border-bottom: 1px solid #DEDBDB;
+	}
+
+	&__textarea {
+		border: 1px solid #DEDBDB;
+		border-radius: 5px;
+		height: rem(100);
+		resize: vertical;
+	}
+
+	&__button {
+		background-color: #212526;
+		border-radius: rem(5);
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: rem(12);
+		}
+	}
+
+	&__agreement {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__link {
+		color: rgba(0, 0, 0, 1);
+		@media(any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.form-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: rem(24);
+
+	&__item {
+		display: grid;
+		gap: rem(5);
 	}
 }

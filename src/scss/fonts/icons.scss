@@ -8,9 +8,34 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-[class*="_icon-"] {
+[class*="icon-"] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
+}
+
+.icon-added:before {
+	content: "\e900";
+}
+.icon-arrow:before {
+	content: "\e901";
+}
+.icon-arrowlong:before {
+	content: "\e902";
+}
+.icon-bar-chart:before {
+	content: "\e903";
+}
+.icon-cart:before {
+	content: "\e904";
+}
+.icon-check:before {
+	content: "\e905";
+}
+.icon-favourite:before {
+	content: "\e906";
+}
+.icon-profile:before {
+	content: "\e907";
 }
