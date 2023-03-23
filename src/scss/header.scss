@@ -93,6 +93,11 @@
 		font-weight: 600;
 		font-size: rem(18);
 		line-height: percent(20, 18);
+		@media(any-hover:hover) {
+			&:hover {
+				color: $mainOrange;
+			}
+		}
 		&_orange{
 			font-size: rem(14);
 			color: #FC573B;
@@ -139,6 +144,124 @@
 	}
 	&:not(:last-child) {
 		margin-right: rem(16);
+	}
+}
+//=========================================================================
+
+.bottom-header {
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(15);
+		padding-top: rem(18);
+		padding-bottom: rem(18);
+	}
+
+	&__catalog {
+	}
+
+	&__btn {
+		display: flex;
+		gap: rem(15);
+		padding: rem(16);
+		border: 1px solid $mainOrange;
+		border-radius: rem(5);
+		transition: background-color 0.3s ease;
+		@media(any-hover: hover) {
+			&:hover {
+				background-color: $mainOrange;
+			}
+		}
+	}
+
+	&__menu {
+		
+	}
+
+	&__socials {
+	}
+
+	&__search {
+	}
+}
+
+.bottom-header-menu {
+
+	&__list {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiveValue("gap", 60, 15);
+	}
+
+	&__item {
+		@media(any-hover: hover) {
+			&:hover {
+				color: $mainOrange;
+			}
+		}
+		&_catalog {
+		}
+	}
+
+	&__link {
+	}
+}
+
+.socials-bottom-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: rem(12);
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		width: rem(37);
+		height: rem(36);
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
+		@media(any-hover: hover) {
+			&:hover {
+				background-color: $mainOrange;
+			}
+		}
+	}
+}
+
+
+.search-bottom-header {
+	background: #FFFFFF;
+	border-radius: rem(5);
+	position: relative;
+	@include adaptiveValue("width", 310, 210);
+	&__button {
+		position: absolute;
+        top: 0;
+        left: rem(8);
+        background-color: transparent;
+        height: rem(41);
+        width: rem(41);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:  #8A8A8A;
+	}
+
+	&__input {
+		width: 100%;
+        height: rem(42);
+        padding: 0 rem(20) 0 rem(57);
+        color: $mainColor;
+        background-color: transparent;
+        border-radius: 3px;
+        &::placeholder {
+            color:  #8A8A8A;
+        }
 	}
 }
 
