@@ -152,7 +152,6 @@
 //=========================================================================
 
 .bottom-header {
-
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -160,6 +159,7 @@
 		gap: rem(15);
 		padding-top: rem(18);
 		padding-bottom: rem(18);
+
 	}
 
 	&__catalog {
@@ -271,22 +271,25 @@
 
 .catalog-header {
 
+	margin-left: rem(-14);
 	&__container {
+		
 	}
 
 	&__menu {
+		display: block;
+		position: absolute;
 	}
 }
 .menu-catalog {
 	display: none;
 	&.open {
-		display: block;
-		max-width: rem(320);
+		display: flex;
 		margin-top: rem(-0.5);
-
 	}
 	&__list {
-		
+
+
 	}
 
 	&__item {
@@ -310,8 +313,10 @@
 		padding: rem(26) rem(24);
 		position: relative;
 		background-color: #fff;
+		
 		&:before{
 			font-size: rem(24);
+			transition: transform 0.3s ease;
 		}
 
 		@media(any-hover:hover) {
@@ -321,23 +326,54 @@
 			}
 		}
 
+		&._sub-menu-active{
+			&:before{
+				transform: rotate(-180deg);
+			}
+		}
+
+		&__sub-menu {
+		}
+
 	}
 }
 
+
 .sub-menu-catalog {
 
-	&__list {
+	&__container {
+		padding: 0;
+	}
+
+	&__block {
 		display: none;
-		li{
-			font-family: 'Prosto One';
-			font-weight: 500;
-			&:not(:last-child) {
-				margin-bottom: rem(20);
-			}
-			@media(any-hover: hover) {
-				&:hover {
-					color: $mainOrange;
-				}
+		padding: rem(32) rem(52);
+		background-color: #fff;
+
+		&._sub-menu-open {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(280px, 1fr));
+			@include adaptiveValue("gap", 90, 15);
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		color: #000;
+		line-height: percent(20, 16);
+
+		@media(any-hover: hover) {
+			&:hover {
+				color: $mainOrange;
 			}
 		}
 	}

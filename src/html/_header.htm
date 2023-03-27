@@ -4,7 +4,7 @@
 			<a href="#" class="top-header__logo"><img src="@img/mainpage/logo.png" alt="logo Inst room"></a>
 			<div class="top-header__clocks">Время работы: 10:00–20:00</div>
 			<div class="top-header__info-call info-call">
-				<a href="tel:84951203214" class="info-call__link ">+7 495 120-32-14</a>
+				<a href="tel:84951203214" class="info-call__link ">+7 495 120-32-14</a>
 				<a data-popup="#callback" class="info-call__link info-call__link_orange popup-link">Заказать звонок</a>
 			</div>
 			<div class="header-top__body">
@@ -24,7 +24,7 @@
 	<div class="header__bottom bottom-header">
 		<div class="bottom-header__container">
 			<div class="bottom-header__catalog">
-				<button class="bottom-header__btn icon-menu" id="catalog">Каталог товаров</button>
+				<button class="bottom-header__btn icon-menu" data-catalog id="catalog">Каталог товаров</button>
 			</div>
 			<nav class="bottom-header__menu bottom-header-menu">
                 <ul  class="bottom-header-menu__list">
@@ -60,30 +60,176 @@
 			<nav class="catalog-header__menu menu-catalog">
 				<ul class="menu-catalog__list">
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow">Малярные товары</a>
-						<ul class="sub-menu-catalog__list">
-							<li>Садово огородный инвентарь</li>
-							<li>Садово огородный инвентарь</li>
-							<li>Садово огородный инвентарь</li>
-							<li>Садово огородный инвентарь</li>
-						</ul>
+						<a href="#" data-parent="1" class="menu-catalog__link icon-arrow">Малярные товары</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow">Электроинструмент</a>
+						<a href="#" data-parent="2" class="menu-catalog__link icon-arrow">Электроинструмент</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow">Спецодежда</a>
+						<a href="#" class="menu-catalog__link icon-arrow">Спецодежда</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow">Малярные товары</a>
+						<a href="#" class="menu-catalog__link icon-arrow">Малярные товары</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow ">Малярные товары</a>
+						<a href="#" class="menu-catalog__link icon-arrow ">Малярные товары</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="" class="menu-catalog__link icon-arrow">Инструменты</a>
+						<a href="#" class="menu-catalog__link icon-arrow">Инструменты</a>
 					</li>
 				</ul>
+				<div class="menu-catalog__sub-menu sub-menu-catalog">
+					<div class="sub-menu-catalog__container">
+						<div hidden data-submenu="1" class="sub-menu-catalog__block">
+							<ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="catalog.html" class="sub-menu-catalog__link">Садово огородный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поливочный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поликарбонат</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Грунт</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Насосы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Сетка Рабица</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Летний душ, умывальники, рукомойники</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Побелка, краска садовая</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Садовый декор</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Товары для отдыха</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Печное литьё и аксессуары</a>
+                                </li>
+                            </ul>
+							<ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="catalog.html" class="sub-menu-catalog__link">Садово огородный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поливочный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поликарбонат</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Грунт</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Насосы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Сетка Рабица</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Летний душ, умывальники, рукомойники</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Побелка, краска садовая</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Садовый декор</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Товары для отдыха</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Печное литьё и аксессуары</a>
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-catalog__sub-menu sub-menu-catalog">
+					<div class="sub-menu-catalog__container">
+						<div hidden data-submenu="2" class="sub-menu-catalog__block">
+							<ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="catalog.html" class="sub-menu-catalog__link">Поливочный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Садово огородный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поликарбонат</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Грунт</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Насосы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Сетка Рабица</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Летний душ, умывальники, рукомойники</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Побелка, краска садовая</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Садовый декор</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Товары для отдыха</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Печное литьё и аксессуары</a>
+                                </li>
+                            </ul>
+							<ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="catalog.html" class="sub-menu-catalog__link">Садово огородный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поливочный инвентарь</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Поликарбонат</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Грунт</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Насосы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Сетка Рабица</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Летний душ, умывальники, рукомойники</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Побелка, краска садовая</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Садовый декор</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Товары для отдыха</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="" class="sub-menu-catalog__link">Печное литьё и аксессуары</a>
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
 			</nav>
 		</div>
 	</div>
