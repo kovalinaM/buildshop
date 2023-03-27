@@ -11,7 +11,7 @@
 				<div class="header-top__actions actions">
 					<a href="#" class="actions__link "><span class="icon-favourite"></span></a>
 					<a href="#" class="actions__link icon-bar-chart"></a>
-					<a href="#" class="actions__link icon-profile"></a>
+					<a data-popup="#registration" class="actions__link icon-profile popup-link"></a>
 					<a href="#" class="actions__link icon-cart"></a>
 				</div>
 				<div class="header-top__total">
@@ -19,6 +19,10 @@
 					<div class="header-top__value">2 000 ₽</div>
 				</div>
 			</div>
+			<nav class="menu">
+				<button type="button" class="menu__icon burger"><span></span></button>
+				<div class="menu__body"></div>
+			</nav>
 		</div>
 	</div>
 	<div class="header__bottom bottom-header">
@@ -27,7 +31,7 @@
 				<button class="bottom-header__btn icon-menu" data-catalog id="catalog">Каталог товаров</button>
 			</div>
 			<nav class="bottom-header__menu bottom-header-menu">
-                <ul  class="bottom-header-menu__list">
+                <ul class="bottom-header-menu__list">
                     <li class="bottom-header-menu__item bottom-header-menu__item_catalog">
                         <a href="#" data-catalog class="bottom-header-menu__link ">О компании</a>
                     </li>
@@ -66,16 +70,16 @@
 						<a href="#" data-parent="2" class="menu-catalog__link icon-arrow">Электроинструмент</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="#" class="menu-catalog__link icon-arrow">Спецодежда</a>
+						<a href="#" class="menu-catalog__link">Спецодежда</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="#" class="menu-catalog__link icon-arrow">Малярные товары</a>
+						<a href="#" class="menu-catalog__link">Малярные товары</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="#" class="menu-catalog__link icon-arrow ">Малярные товары</a>
+						<a href="#" class="menu-catalog__link">Малярные товары</a>
 					</li>
 					<li class="menu-catalog__item">
-						<a href="#" class="menu-catalog__link icon-arrow">Инструменты</a>
+						<a href="#" class="menu-catalog__link">Инструменты</a>
 					</li>
 				</ul>
 				<div class="menu-catalog__sub-menu sub-menu-catalog">

@@ -1,15 +1,3 @@
-/*
-(i) Код попадает в итоговый файл,
-только когда вызвана функция,
-например flsFunctions.spollers();
-Или когда импортирован весь файл,
-например import "files/script.js";
-Неиспользуемый (не вызванный)
-код в итоговый файл не попадает.
-
-Если мы хотим добавить модуль
-следует его расскоментировать
-*/
 
 // Включить/выключить FLS (Full Logging System) (в работе)
 window['FLS'] = true;
@@ -30,41 +18,36 @@ flsFunctions.isWebp();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
 // flsFunctions.fullVHfix();
 
 /*
 Модуль работы со спойлерами
-Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
 // flsFunctions.spollers();
 
 /*
 Модуль работы с табами
-Документация: https://template.fls.guru/template-docs/modul-taby.html
 Сниппет (HTML): tabs
 */
 // flsFunctions.tabs();
 
 /*
 Модуль "показать еще"
-Документация: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
 Сниппет (HTML): showmore
 */
 // flsFunctions.showMore();
 
 /*
 Попапы
-Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl
 */
 import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
-Документация: 
 Сниппет (HTML): 
 */
 // import './libs/parallax-mouse.js'
@@ -75,11 +58,9 @@ import './libs/popup.js'
 import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
 // flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
 // flsForms.formSubmit();
 
 /* Модуль формы "количество" */
@@ -116,7 +97,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://atomiks.github.io/tippyjs/
 Сниппет (HTML): tip (добавляет атрибут с подсказкой для html тега)
 */
-import "./files/tippy.js";
+// import "./files/tippy.js";
 
 // ========================================================================================================================================================================================================================================================
 // Работа со слайдером (Swiper) ========================================================================================================================================================================================================================================================
@@ -148,7 +129,6 @@ import "./files/tippy.js";
 // import './files/scroll/lazyload.js';
 
 // Наблюдатель за объектами c атрибутом data-watch
-// Документация: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сниппет(HTML):
 // import './libs/watcher.js'
 
@@ -181,7 +161,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 /* Динамический адаптив */
 // Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
-// import "./libs/dynamic_adapt.js";
+import "./libs/dynamic_adapt.js";
 
 /* Форматирование чисел */
 // import './libs/wNumb.min.js';

@@ -1,12 +1,10 @@
 //====================================================================================================
 
-//====================================================================================================
-
 //Burger
-/*
-.icon-menu {
+
+.burger {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: $tablet) {
 		display: block;
 		position: relative;
 		width: rem(30);
@@ -22,7 +20,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: #fff;
 		}
 		&::before {
 			top: 0;
@@ -51,7 +49,7 @@
 		}
 	}
 }
-*/
+
 
 
 .header {
@@ -82,16 +80,22 @@
 	&__clocks {
 		font-weight: 500;
 		line-height: percent(20,16);
-
+		@media(max-width: em(860)) {
+			display: none;
+		}
 	}
 
 	&__info-call {
+
 	}
 }
 .info-call {
 	display: flex;
 	flex-direction: column;
 	gap: rem(10);
+	@media(max-width: $mobile) {
+		display: none;
+	}
 	&__link {
 		font-weight: 600;
 		font-size: rem(18);
@@ -125,6 +129,9 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: rem(4);
+		@media(max-width: em(1100)) {
+			display: none;
+		}
 	}
 
 	&__text {
@@ -198,6 +205,9 @@
 		justify-content: space-between;
 		align-items: center;
 		@include adaptiveValue("gap", 60, 15);
+		@media(max-width: $tablet) {
+
+		}
 	}
 
 	&__item {
@@ -211,6 +221,40 @@
 	}
 
 	&__link {
+	}
+}
+
+.menu__body{
+	@media(max-width: $tablet) {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: -100%;
+		overflow: auto;
+		background-color: $mainGrey;
+		padding: rem(100) rem(15) rem(50) rem(15);
+		transition: left 0.3s ease;
+		z-index: 4;
+		&::before{
+			content: '';
+			position: fixed;
+			width: 100%;
+			height: rem(70);
+			left: -100%;
+			top: 0;
+			background-color: $mainGrey;;
+		}
+		&.menu-open{
+			left: 0;
+			&::before{
+				left: 0;
+			}
+		}
+		.bottom-header-menu__list{
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
 
@@ -270,10 +314,7 @@
 
 
 .catalog-header {
-
-	margin-left: rem(-14);
-	&__container {
-		
+	&__container {		
 	}
 
 	&__menu {
@@ -285,11 +326,9 @@
 	display: none;
 	&.open {
 		display: flex;
-		margin-top: rem(-0.5);
 	}
+
 	&__list {
-
-
 	}
 
 	&__item {
@@ -312,12 +351,16 @@
 		line-height: percetn(20, 16);
 		padding: rem(26) rem(24);
 		position: relative;
-		background-color: #fff;
+		background-color: #fdfdfd;
+		&:not(.icon-arrow) {
+			flex-direction: row;
+		}
 		
 		&:before{
 			font-size: rem(24);
 			transition: transform 0.3s ease;
 		}
+
 
 		@media(any-hover:hover) {
 			&:hover {
@@ -337,7 +380,6 @@
 
 	}
 }
-
 
 .sub-menu-catalog {
 

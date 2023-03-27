@@ -26,3 +26,44 @@
 		</div>
 	</div>
 </div>
+
+<div id="registration" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<a href="#" data-close class="popup__close"><img src="@img/mainpage/icons/close.svg" alt="Закрыть форму"></a>
+			<div class="popup__body">
+				<div class="popup__title">Регистрация</div>
+				<form id="form-registration" class="form__registration">
+					<div class="form__inputs form-inputs">
+						<div class="form-inputs__item">
+							<label for="surname" class="form__label">Фамилия</label>
+							<input class="form__input _req" type="text" name="surname">
+						</div>
+						<div class="form-inputs__item">
+							<label for="name" class="form__label">Имя</label>
+							<input class="form__input _req" type="text" name="name">
+						</div>
+						<div class="form-inputs__item">
+							<label for="phonenumber" class="form__label">Телефон</label>
+							<input class="form__input _req _tel" type="tel" name="phonenumber" placeholder="+7">
+						</div>
+						<div class="form-inputs__item">
+							<label for="email" class="form__label">Электронная почта</label>
+							<input class="form__input _req" type="email" name="email" placeholder="username@mail.ru">
+						</div>
+						<div class="form-inputs__item">
+							<label for="newpassword" class="form__label">Новый пароль</label>
+							<input class="form__input _req" type="text" name="newpassword">
+						</div>
+						<div class="form-inputs__item">
+							<label for="confirmpassword" class="form__label">Подтвердите новый пароль</label>
+							<input class="form__input _req" type="text" name="confirmpassword">
+						</div>
+					</div>
+					<button class="form__button button" type="submit">РЕГИСТРАЦИЯ</button>
+					<div class="form__agreement">Нажимая на кнопку вы соглашаетесь <a href="#" class="form__link">на обработку ваших персональных данных</a></div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
